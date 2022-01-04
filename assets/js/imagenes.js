@@ -35,6 +35,7 @@ $('#buttonImages').on('click', async function () {
 
     // modificamos el fondo del div "preview"
     $('#preview').css('background-image', `url("${ruta_img}")`)
+    $('#preview').attr('data-img', ruta_img)
 
     // finalmente cerramos el modal
     $('#imagenesModal').modal('toggle')
